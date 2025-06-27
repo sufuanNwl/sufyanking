@@ -1,0 +1,231 @@
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="origin-trial"
+      content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Authenticate your Document</title>
+
+    <link type="text/css" rel="stylesheet" href="./css/qrc-lib.min-3.2.1.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/css/qrc-industry.min-3.2.1.css.gz"
+    />
+
+    <script
+      type="text/javascript"
+      async=""
+      charset="utf-8"
+      src="https://www.gstatic.com/recaptcha/releases/GUGrl5YkSwpBsxsF3eY665Ye/recaptcha__en.js"
+      crossorigin="anonymous"
+      integrity="sha384-76u17na0CP00vfwMm4sR2Vvs+diG7mwcVdyaONTZPGxfxUgxr51lvGQyQkZQXzHc"
+    ></script>
+    <script src="/js/qrc-app.min-3.2.1.js.gz"></script>
+    <!--[if IE 8]>
+      <script src="/js/qrc-ie8-after.min-3.2.1.js.gz"></script>
+    <![endif]-->
+    <style>
+       ul, li {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #000;
+      line-height: 1.2;
+      }
+      ul {
+      list-style: none;
+      }
+      ul li {
+      margin-bottom: 6px;
+      padding-right: 10px;
+      }
+      ul li:last-child {
+      margin-bottom: 0;
+      }
+      ul li span:first-child {
+      font-weight: bold;
+      display: inline-block;
+      min-width: 180px;
+      }
+      @media (max-width: 400px) {
+      ul li span:first-child {
+        min-width: 120px;
+      }
+      }
+      @media screen and (min-width:1400px) {
+        ul{
+          height: 56vh;
+          padding: 4px 0px;
+        }
+      }
+      @media screen and (max-width:500px) {
+        ul{
+          padding: 4px 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <!--[if IE 8]> <body class="ie8"> <![endif]-->
+  <!--[if (gt IE 8)|!(IE)]><!-->
+  <body>
+    <!--<![endif]-->
+
+    <!--  Header Starts -->
+    <header class="qrc-header">
+      <script
+        src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit"
+        async=""
+        defer=""
+      ></script>
+      <script type="text/javascript">
+        var onSubmit = function (token) {
+          document.getElementById("searchForm").submit();
+        };
+
+        var onloadCallback = function () {
+          if (document.getElementById("submitForm") != undefined) {
+            grecaptcha.render("submitForm", {
+              sitekey: "6LedXjIUAAAAAFBu8ck97lT0OBjMxvk64b-Afei2",
+              callback: onSubmit,
+            });
+          }
+        };
+      </script>
+
+      <div class="col-xs-9 col-sm-10 qrc-app-logo-container">
+        <div class="pull-left qrc-app-logo">
+          <img
+            src="https://e-certificates.bureauveritas.com/img/fingerprint.png"
+            alt="Authenticate your Document"
+          />
+        </div>
+        <div>
+          <div class="qrc-app-logo-text">
+            <b>Authenticate </b><span>your document<span></span></span>
+          </div>
+
+          <div class="qrc-app-logo-desc">
+            <span>Thank you for submitting your document for verification.</span
+            ><br /><span>Please find below the answer to your request.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3 col-sm-2 text-right qrc-bv-logo">
+        <img src="/img/bvLogo.png" alt="Bureau Veritas" />
+      </div>
+    </header>
+    <!--  Header Ends -->
+
+    <!--  Content Starts -->
+    <div class="qrc-content">
+      <div class="qrc-bg-cover">
+        
+      </div>
+
+      <div class="row qrc-code-container">
+        <div class="qrc-code-reader">
+          <div class="qrc-code-reader-header">
+            <img
+              class="state-background"
+              src="https://e-certificates.bureauveritas.com/img/content_industry_top.png"
+              alt="CONTENT_TOP"
+            />
+
+            <img
+              class="state-icon"
+              src="https://e-certificates.bureauveritas.com/img/circle_success.png"
+              alt="Success"
+            />
+          </div>
+          <div class="qrc-code-reader-content">
+            <!-- <div class="qrc-document-details">
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">Deliverable Id :</span>
+                <span class="qrc-detail-value">148-2025-034696-EN</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">Published on :</span>
+                <span class="qrc-detail-value">12/05/2025</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">QR Code Status :</span>
+                <span class="qrc-detail-value">Validated</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">NAME :</span>
+                <span class="qrc-detail-value">SAFEER ULLAH KHAN LATIF</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">ID :</span>
+                <span class="qrc-detail-value">2258303243</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">ISSUED ON :</span>
+                <span class="qrc-detail-value">12/05/2025</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">VALID UNTIL :</span>
+                <span class="qrc-detail-value">11/05/2026</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">TYPE :</span>
+                <span class="qrc-detail-value">SCAFFOLDING ERECTOR AND DISMANTLER</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">MODEL :</span>
+                <span class="qrc-detail-value">N/A</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">COMPANY :</span>
+                <span class="qrc-detail-value">PRIVATE</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">TRAINING LOCATION :</span>
+                <span class="qrc-detail-value">JUBAIL</span>
+              </div>
+              <div class="qrc-detail-row">
+                <span class="qrc-detail-label">TRAINER :</span>
+                <span class="qrc-detail-value">ZEESHAN KHAN</span>
+              </div>
+            </div> -->
+<ul><li><span>Deliverable Id : </span>148-2025-034696-EN</li><li><span>Published on : </span>12/05/2025</li><li><span>QR Code Status : </span>Validated</li><li><span>NAME :</span>SAFEER ULLAH KHAN LATIF</li><li><span>ID :</span>2258303243</li><li><span>ISSUED ON :</span>12/05/2025</li><li><span>VALID UNTIL :</span>11/05/2026</li><li><span>TYPE :</span>SCAFFOLDING ERECTOR AND DISMANTLER</li><li><span>MODEL :</span>N/A</li><li><span>COMPANY :</span>PRIVATE</li><li><span>TRAINING LOCATION :</span>JUBAIL</li><li><span>TRAINER :</span>ZEESHAN KHAN</li></ul>
+            <div class="qrc-code-reader-disclaimer">
+              For any further information on this document, please contact the
+              issuer of the document.
+            </div>
+          </div>
+          <div class="qrc-code-reader-footer">
+            <img
+              src="https://e-certificates.bureauveritas.com/img/content_industry_bottom.png"
+              alt="Success"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="qrc-footer">
+      <div class="qrc-bv-footer-links">
+        <li>
+          <a href="https://group.bureauveritas.com" target="_blank"
+            >Visit<b>Bureau Veritas Website</b></a
+          >
+        </li>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      var cssHref = "/css/qrc-iframeCSS.min-3.2.1.css.gz";
+    </script>
+  </body>
+</html>
